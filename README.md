@@ -1,6 +1,6 @@
 # setup-fvm
 
-This action performs the following tasks:
+Set up Flutter SDK using [FVM](https://fvm.app) and cache them. In detail, this action performs the following tasks:
 
 - Installs FVM
 - Installs Flutter SDK and run `fvm flutter pub get --enforce-lockfile`
@@ -16,7 +16,7 @@ jobs:
   foo:
     # ...
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Initialize Flutter SDK
         uses: chika3742/setup-fvm@v3
